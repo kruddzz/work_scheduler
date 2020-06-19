@@ -1,4 +1,3 @@
-# work_scheduler
 // USE CASES:
     // 1) When opened the planner presents:
         // a) Work Day Scheduler :A simple calendar app for scheduling your work day with current date listed below (at top of the page)
@@ -15,10 +14,8 @@
     // 5)When the page is refreshed the data is still present
     // 6) if you click the lock button again
         // a) data remains on the page until page is refreshed or deleted
-//HTML
-// create time blocks and save buttons
 
-// CSS
+// CSS ??? look for other ways to change colors for times of day
 //create differnt stylesheets for different times of day 
 
 // VARIABLES
@@ -28,8 +25,9 @@
 
 // EVENT LISTENERS
 // User clicks a time block
-// using jquery $, what html element are we going to select for the time blocks
+// using jquery $, what html element are we going to select for the time blocks and lock button
 // User Clicks the lock button to save data.
-// on clock liseners for 
+// on click liseners for 
     // input area of time blocks
     // lock button
+// saving data to local storage useing lock button

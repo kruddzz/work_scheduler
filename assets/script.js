@@ -37,7 +37,15 @@ $(".saveBtn").click(function() {
     // console.log(time);
     localStorage.setItem(time, JSON.stringify(text));
 
+    hourColor();
+    saveText();
 });
 
-    hourColor ();
+function saveText () {
+    var text9 = JSON.parse(localStorage.getItem("9:00 am"));
+    $("#nine").val("");
+    $("#nine").val(text9);
+}
+    saveText();
+    hourColor();
 });

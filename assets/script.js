@@ -2,15 +2,13 @@ $(document).ready( function() {
 // displays Day, Month date in the header
 $("#currentDay").text(moment().format("dddd, MMMM Do"));
 
+// function controls time blocks colors according past, present or future
 function hourColor () {
     
     var realTime = moment().hours();
-    // console.log("Current Time" + realTime);
 
-    // color change by time of day
     $(".input").each(function () {
         var timeTest = parseInt($(this).attr("id"));
-        // console.log(timeTest);
         
         if (realTime > timeTest) {
             $(this).addClass("past");
@@ -30,15 +28,15 @@ function hourColor () {
 // Save Buttons
 $(".saveBtn").click(function() {
     text = $(this).siblings(".input").val();
-    // console.log(text);
+
     time = $(this).siblings(".hour").text();
-    // console.log(time);
+
     localStorage.setItem(time, JSON.stringify(text));
 
     hourColor();
     saveText();
 });
-
+// this function allows text to be saved to the page
 function saveText () {
     var text9 = JSON.parse(localStorage.getItem("9:00 am"));
     $("#nine").val("");

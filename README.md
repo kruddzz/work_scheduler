@@ -17,7 +17,7 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 
-![screenshot](assets/Images/schedule.png)
+![screenshot](assets/Images/scheduler.png)
 
 // USE CASES:
     // 1) When opened the planner presents:
